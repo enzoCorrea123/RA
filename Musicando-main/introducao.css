@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+:root {
+    --cor--primaria: #FBFFF5;
+    --cor--secundaria: #000000;
+    --cor--terciaria: #D28C0E;
+    --cor--quartenaria: #CF982C;
+    --font--primaira:'Nunito', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 60px 0px 30px;
+  min-height: 100vh;
+  background-color: var(--cor--primaria);
+  font-family: var(--font--primaira);
+}
+
+.secao_inicio {
+  padding: 2.5rem;
+  color: var(--cor--secundaria);
+  text-align: left;
+}
+
+.parte_principal {
+  color: var(--cor--terciaria);
+}
+
+.apresentacao_texto1 {
+  margin: 10px;
+  font-size: 20px;
+}
+
+.apresentacao_texto2 {
+  margin: 10px;
+  font-size: 25px;
+}
+
+p {
+  margin-top: 10px;
+}
+
+.inicio_jogo {
+    text-decoration: none;
+}
+
+.botao_inicio {
+    font-size: 25px;
+    background-color: var(--cor--quartenaria);
+    padding: 8px;
+    border: 2px solid var(--cor--secundaria);
+    border-radius: 10px;
+    color: var(--cor--secundaria);
+}
+
+.botao_jogo {
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  border-radius: 10px;
+  height: 35rem;
+}
+
+@media (max-width: 768px) {
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+    body {
+        text-align: left;
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+    }
+
+    img {
+        margin-top: 20px;
+        width: 100%;
+        height: auto;
+    }
+}

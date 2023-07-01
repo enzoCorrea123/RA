@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.2/dist/mindar-image-aframe.prod.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Musicando</title>
+  </head>
+  <body>
+    <div class="wrapper">
+        <a href="#demo-modal">Abrir modal</a>
+      </div>
+       
+      <div id="demo-modal" class="modal">
+        <div class="content">
+          <h1 id="titulo"></h1>
+       
+          <pre id="dica"></pre> 
+          <div class="footer">
+            <a href="#" class="footer-btn-close">Fechar</a>
+          </div>
+       
+          <a href="#" class="close">&times;</a>
+        </div>
+      </div>
+    <a-scene mindar-image="imageTargetSrc: https://cdn.glitch.global/66ab7569-44bf-47b6-bc1b-1b79b469cac4/targets.mind?v=1686958876142" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">  
+      <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
+      <a-entity id="target0" mindar-image-target="targetIndex: 0"></a-entity>
+      <a-entity id="target1" mindar-image-target="targetIndex: 1"></a-entity>
+      <a-entity id="target2" mindar-image-target="targetIndex: 2"></a-entity>
+      <a-entity id="target3" mindar-image-target="targetIndex: 3"></a-entity>
+      <a-entity id="target4" mindar-image-target="targetIndex: 4"></a-entity>
+    </a-scene>
+  </body>
+  <script src="script.js"></script>
+</html>
