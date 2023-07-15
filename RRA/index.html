@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.2/dist/mindar-image-aframe.prod.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <a-scene mindar-image="imageTargetSrc: https://cdn.glitch.global/66ab7569-44bf-47b6-bc1b-1b79b469cac4/targets%20(1).mind?v=1689377235997;" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
+    <a-assets>
+	    <img id="card" src="https://cdn.glitch.global/66ab7569-44bf-47b6-bc1b-1b79b469cac4/target 0?v=1689377507140"/>
+    </a-assets>
+
+      <a-camera position="0 0 0" look-controls="enabled: false" cursor="fuse: false; rayOrigin: mouse;" raycaster="far: ${customFields.libVersion}; objects: .clickable"></a-camera>
+
+      <a-entity mindar-image-target="targetIndex: 0" id="target0">
+         <div class="flex items-center flex-col" id="conteudo">
+               <div class="componente" id="componente1">
+                  <h1>❄ O que é? ❄</h1>
+                  
+               </div>
+    
+               <div class="componente" id="componente2">
+                  <h1>❄ Como funciona? ❄</h1>
+                  <p>▴</p>
+               </div>
+   
+               <div class="componente" id="componente3">
+                  <h1>❄ Pra que serve? ❄</h1>
+                             
+               </div>
+   
+               <div class="componente" id="componente4">
+                  <h1>❄ Lista de peças ❄</h1>
+               </div>
+         </div>
+      </a-entity>
+    </a-scene>
+    <script src="script.js"></script>
+  </body>
+</html>
