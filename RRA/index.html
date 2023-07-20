@@ -3,40 +3,313 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.2/dist/mindar-image-aframe.prod.js"></script>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/css/style.css">
   </head>
   <body>
-    <a-scene mindar-image="imageTargetSrc: https://cdn.glitch.global/66ab7569-44bf-47b6-bc1b-1b79b469cac4/targets%20(1).mind?v=1689377235997;" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
+    <a-scene mindar-image="imageTargetSrc: /assets/targets.mind" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
     <a-assets>
-	    <img id="card" src="https://cdn.glitch.global/66ab7569-44bf-47b6-bc1b-1b79b469cac4/target 0?v=1689377507140"/>
+	    <img id="card" src="/assets/2b21d269-4108-440d-a65c-8162ec4e7974-removebg-preview.png"/>
     </a-assets>
 
-      <a-camera position="0 0 0" look-controls="enabled: false" cursor="fuse: false; rayOrigin: mouse;" raycaster="far: ${customFields.libVersion}; objects: .clickable"></a-camera>
+      <a-camera position="0 0 0" look-controls="enabled: false" id="camera"></a-camera>
 
       <a-entity mindar-image-target="targetIndex: 0" id="target0">
-         <div class="flex items-center flex-col" id="conteudo">
-               <div class="componente" id="componente1">
+         <div class="conteudo">
+            <div>
+               <div class="componente">
                   <h1>❄ O que é? ❄</h1>
                   
                </div>
     
-               <div class="componente" id="componente2">
+               <div class="componente">
                   <h1>❄ Como funciona? ❄</h1>
-                  <p>▴</p>
                </div>
-   
-               <div class="componente" id="componente3">
+            </div>
+           
+            <div>
+               <div class="componente">
                   <h1>❄ Pra que serve? ❄</h1>
                              
                </div>
    
-               <div class="componente" id="componente4">
+               <div class="componente">
                   <h1>❄ Lista de peças ❄</h1>
                </div>
+            </div>
          </div>
       </a-entity>
+      
+      <a-entity mindar-image-target="targetIndex: 1" id="target1">
+         <div class="conteudo">
+            <div>
+               <div class="componente">
+                  <h1>❄ O que é? ❄</h1>
+                  
+               </div>
+    
+               <div class="componente">
+                  <h1>❄ Como funciona? ❄</h1>
+               </div>
+            </div>
+           
+            <div>
+               <div class="componente">
+                  <h1>❄ Pra que serve? ❄</h1>
+                             
+               </div>
+   
+               <div class="componente">
+                  <h1>❄ Lista de peças ❄</h1>
+               </div>
+            </div>
+         </div>
+      </a-entity>
+      
+    <a-entity mindar-image-target="targetIndex: 2" id="target2">
+         <div class="conteudo">
+            <div>
+               <div class="componente">
+                  <h1>❄ O que é? ❄</h1>
+                  
+               </div>
+    
+               <div class="componente">
+                  <h1>❄ Como funciona? ❄</h1>
+               </div>
+            </div>
+           
+            <div>
+               <div class="componente">
+                  <h1>❄ Pra que serve? ❄</h1>
+                             
+               </div>
+   
+               <div class="componente">
+                  <h1>❄ Lista de peças ❄</h1>
+               </div>
+            </div>
+         </div>
+      </a-entity>
+      
+      <a-entity mindar-image-target="targetIndex: 3" id="target3">
+         <div class="conteudo">
+            <div>
+               <div class="componente">
+                  <h1>❄ O que é? ❄</h1>
+                  
+               </div>
+    
+               <div class="componente">
+                  <h1>❄ Como funciona? ❄</h1>
+               </div>
+            </div>
+           
+            <div>
+               <div class="componente">
+                  <h1>❄ Pra que serve? ❄</h1>
+                             
+               </div>
+            </div>
+         </div>
+      </a-entity>
+      
+      <a-entity mindar-image-target="targetIndex: 4" id="target4">
+         <div class="conteudo">
+            <div>
+               <div class="componente">
+                  <h1>❄ O que é? ❄</h1>
+                  
+               </div>
+    
+               <div class="componente">
+                  <h1>❄ Como funciona? ❄</h1>
+               </div>
+            </div>
+           
+            <div>
+               <div class="componente">
+                  <h1>❄ Pra que serve? ❄</h1>
+                             
+               </div>
+   
+               <div class="componente">
+                  <h1>❄ Lista de peças ❄</h1>
+               </div>
+            </div>
+         </div>
+      </a-entity>
+      
+      <a-entity mindar-image-target="targetIndex: 5" id="target5">
+         <div class="conteudo">
+            <div>
+               <div class="componente">
+                  <h1>❄ O que é? ❄</h1>
+                  
+               </div>
+    
+               <div class="componente">
+                  <h1>❄ Como funciona? ❄</h1>
+               </div>
+            </div>
+           
+            <div>
+               <div class="componente">
+                  <h1>❄ Pra que serve? ❄</h1>
+                             
+               </div>
+            </div>
+         </div>
+      </a-entity>
+      
+      <a-entity mindar-image-target="targetIndex: 6" id="target6">
+         <div class="conteudo">
+            <div>
+               <div class="componente">
+                  <h1>❄ O que é? ❄</h1>
+                  
+               </div>
+    
+               <div class="componente">
+                  <h1>❄ Como funciona? ❄</h1>
+               </div>
+            </div>
+           
+            <div>
+               <div class="componente">
+                  <h1>❄ Pra que serve? ❄</h1>
+                             
+               </div>
+   
+               <div class="componente">
+                  <h1>❄ Lista de peças ❄</h1>
+               </div>
+            </div>
+         </div>
+      </a-entity>
+      
+      <a-entity mindar-image-target="targetIndex: 7" id="target7">
+         <div class="conteudo">
+            <div>
+               <div class="componente">
+                  <h1>❄ O que é? ❄</h1>
+                  
+               </div>
+    
+               <div class="componente">
+                  <h1>❄ Como funciona? ❄</h1>
+               </div>
+            </div>
+           
+            <div>
+               <div class="componente">
+                  <h1>❄ Pra que serve? ❄</h1>
+                             
+               </div>
+   
+               <div class="componente">
+                  <h1>❄ Lista de peças ❄</h1>
+               </div>
+            </div>
+         </div>
+      </a-entity>
+      
+      <a-entity mindar-image-target="targetIndex: 8" id="target8">
+         <div class="conteudo">
+            <div>
+               <div class="componente">
+                  <h1>❄ O que é? ❄</h1>
+                  
+               </div>
+    
+               <div class="componente">
+                  <h1>❄ Como funciona? ❄</h1>
+               </div>
+            </div>
+           
+            <div>
+               <div class="componente">
+                  <h1>❄ Pra que serve? ❄</h1>
+                             
+               </div>
+   
+               <div class="componente">
+                  <h1>❄ Lista de peças ❄</h1>
+               </div>
+            </div>
+         </div>
+      </a-entity>
+      
+      <a-entity mindar-image-target="targetIndex: 9" id="target9">
+         <div class="conteudo">
+            <div>
+               <div class="componente">
+                  <h1>❄ O que é? ❄</h1>
+                  
+               </div>
+    
+               <div class="componente">
+                  <h1>❄ Como funciona? ❄</h1>
+               </div>
+            </div>
+           
+            <div>
+               <div class="componente">
+                  <h1>❄ Pra que serve? ❄</h1>
+                             
+               </div>
+   
+               <div class="componente">
+                  <h1>❄ Lista de peças ❄</h1>
+               </div>
+            </div>
+         </div>
+      </a-entity>
+      
+      <a-entity mindar-image-target="targetIndex: 10" id="target10">
+         <div class="conteudo">
+            <div>
+               <div class="componente">
+                  <h1>❄ O que é? ❄</h1>
+                  
+               </div>
+    
+               <div class="componente">
+                  <h1>❄ Como funciona? ❄</h1>
+               </div>
+            </div>
+           
+            <div>
+               <div class="componente">
+                  <h1>❄ Pra que serve? ❄</h1>
+                             
+               </div>
+            </div>
+         </div>
+      </a-entity>
+      
+      <a-entity mindar-image-target="targetIndex: 11" id="target11">
+         <div class="conteudo">
+            <div>
+               <div class="componente">
+                  <h1>❄ O que é? ❄</h1>
+                  
+               </div>
+    
+               <div class="componente">
+                  <h1>❄ Como funciona? ❄</h1>
+               </div>
+            </div>
+           
+            <div>
+               <div class="componente">
+                  <h1>❄ Pra que serve? ❄</h1>
+                             
+               </div>
+            </div>
+         </div>
+      </a-entity>
+      
     </a-scene>
-    <script src="script.js"></script>
+    <script src="/js/script.js"></script>
   </body>
 </html>
